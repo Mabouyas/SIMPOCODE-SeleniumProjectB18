@@ -12,10 +12,10 @@ public class P4_GoogleTitleVerification {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("apple");
-		driver.findElement(By.name("btnk")).click();
+		driver.findElement(By.name("btnK")).click();
 		
 		String actualTitle = driver.getTitle();
-		String expectedTitle = "aplle";
+		String expectedTitle = "apple";
 		
 		if (actualTitle.startsWith(expectedTitle))
 		{
