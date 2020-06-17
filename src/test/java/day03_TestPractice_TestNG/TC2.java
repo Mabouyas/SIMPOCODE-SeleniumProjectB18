@@ -20,4 +20,10 @@ public class TC2 {
 
     @Test
     void test4() { System.out.println("This is test4..."); }
+
+    @BeforeTest
+    void beforeTest() { System.out.println("This will execute before the Test"); }
+
+    @AfterTest
+    void afterTest() { System.out.println("This will execute before the Test"); }
 }
