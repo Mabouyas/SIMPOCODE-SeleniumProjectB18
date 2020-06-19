@@ -26,4 +26,10 @@ public class TC2 {
 
     @AfterTest
     void afterTest() { System.out.println("This will execute before the Test"); }
+
+    @BeforeSuite
+    void beforeSuite() { System.out.println("This will execute before the Suite"); }
+
+    @AfterSuite
+    void afterSuite() { System.out.println("This will execute after the Suite"); }
 }

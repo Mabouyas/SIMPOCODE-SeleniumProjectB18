@@ -23,12 +23,14 @@ public class TC1
     void test2() { System.out.println("This is test2..."); }
 
     @BeforeTest
-    void beforeTest() {
-        System.out.println("This will execute before the Test");
-    }
+    void beforeTest() { System.out.println("This will execute before the Test"); }
 
     @AfterTest
-    void afterTest() {
-        System.out.println("This will execute before the Test");
-    }
+    void afterTest() { System.out.println("This will execute before the Test"); }
+
+    @BeforeSuite
+    void beforeSuite() { System.out.println("This will execute before the Suite"); }
+
+    @AfterSuite
+    void afterSuite() { System.out.println("This will execute after the Suite"); }
 }
