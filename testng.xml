@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/SeleniumProjectB18/src/test/java/day03_TestPractice_TestNG/TC1.java">
+    <test verbose="2" preserve-order="true" name="C:/SeleniumProjectB18/src/test_spring2020B18Automation/java/day04_TestNGDropDown/TC1.java">
         <classes>
-            <class name="day03_TestPractice_TestNG.TC1">
+            <class name="day04_TestNGDropDown.TC1">
                 <methods>
-                    <include name="test1"/>
-                    <include name="test2"/>
+                    <include name="test_dropDown_verification"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true"
-
-          name="C:/SeleniumProjectB18/src/test/java/day03_TestPractice_TestNG/TC2.java">
-        <classes>
-            <class name="day03_TestPractice_TestNG.TC2">
-                <methods>
-                    <include name="test3"/>
-                    <include name="test4"/>
-                </methods>
-            </class>
-        </classes>
+    <test verbose="2" preserve-order="true" name="C:/SeleniumProjectB18/src/test_spring2020B18Automation/java/day04_TestNGDropDown/TC2.java">
+        <classes/>
     </test>
 </suite>
