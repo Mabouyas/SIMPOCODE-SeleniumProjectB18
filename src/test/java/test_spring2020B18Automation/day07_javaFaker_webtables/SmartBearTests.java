@@ -44,7 +44,7 @@ public class SmartBearTests {
     }
 
     @Test
-    public void p1_smartbear_login_test(){
+    public void p1_smarter_login_test(){
 
 
         //6. Print out count of all the links on landing page
@@ -66,7 +66,7 @@ public class SmartBearTests {
     }
 
     @Test
-    public void p2_smartbear_order_placing() throws InterruptedException{
+    public void p2_smarter_order_placing() throws InterruptedException{
         //TC#2: Smartbear software order placing
         //6. Click on Order
         WebElement orderLink = driver.findElement(By.xpath("//a[.='Order']"));
@@ -142,7 +142,20 @@ public class SmartBearTests {
 
 
     }
-
-
-
+    
+    @Test
+    public void p3_smartbear_order_verification(){
+        //2. Click on View all orders
+        //3. Verify Susan McLaren has order on date “01/05/2010”
+        WebElement susansDate = driver.findElement(By.xpath("//td[.='Susan McLaren']/following-sibling::td[3]"));
+        
+        String expectedDate = "01/05/2010";
+        String actualDate = susansDate.getText();
+        
+        Assert.assertEquals(actualDate, expectedDate);
+        
+        
+        
+    }
+    
 }
